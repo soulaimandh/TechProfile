@@ -70,6 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "techprofile.wsgi.application"
 
+AUTH_USER_MODEL = 'param.CustomUser'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
