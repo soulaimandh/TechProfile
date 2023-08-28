@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  django-main-app:
+    build: .
+    ports:
+      - "8000:8000"
+    command: python manage.py runserver 0.0.0.0:8000 --noreload
+
+  candidate-microservice:
+    build: ./microservices/candidate
+    ports:
+      - "8001:8000"
+  company-microservice:
+    build: ./microservices/company
+    ports:
+      - "8002:8000"
+  notification-microservice:
+    build: ./microservices/notifs
+    ports:
+      - "8003:8000" 
+  payment-microservice:
+    build: ./microservices/payment
+    ports:
+      - "8004:8000"
+  skill-microservice:
+    build: ./microservices/skills
+    ports:
+      - "8005:8000"
