@@ -38,6 +38,11 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "param",
+    "apps.skills",
+    "apps.condidate",
+    "apps.company",
+    "apps.notifs",
+    "apps.payment",
 ]
 
 MIDDLEWARE = [
